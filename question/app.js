@@ -63,3 +63,24 @@ user.birthday = '2000-09-27';
 user.sayHello = sayHello;
 
 user.sayHello();
+
+//Q8 引数
+let calc = {
+  add(x,y) {
+    console.log(x + y);
+  },
+  subtract(x,y) {
+    console.log(x - y);
+  },
+  multiply(x,y) {
+    console.log(x * y);
+  },
+  divide(x,y) {
+    console.log(x / y);
+  }
+};
+
+calc.add(5,2);
+calc.subtract(12,2);
+calc.multiply(7,7);
+calc.divide(25,5);
