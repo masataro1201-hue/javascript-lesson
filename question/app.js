@@ -104,3 +104,8 @@ return surplus;
 //Q1 標準組み込みオブジェクト
 let randomInt = Math.floor(Math.random() * 9) +1;
 console.log(randomInt);
+
+//Q2 コールバック関数
+setTimeout(() => {
+  console.log('Hello World!');
+}, 3000);
