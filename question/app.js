@@ -45,3 +45,15 @@ let ages = playerList.map(player => player.age);
 let total = ages.reduce((sum, age) => sum + age, 0);
 let average = total / ages.length;
 console.log(average);
+
+//Q6 関数
+function sayHello() {
+  console.log('Hello');
+}
+
+let sayWorld = function() {
+  console.log('World');
+}
+
+sayHello();
+sayWorld();
