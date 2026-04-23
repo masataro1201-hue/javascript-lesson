@@ -1,11 +1,11 @@
 //Q1 変数
 let nickname = 'ごっしー';
-let  age = '28';
+let age = '28';
 
 console.log('私のニックネームは' + nickname + 'です。年齢は' + age + '歳です。');
 
 //Q2 配列
-let  languages = ['JavaScript', 'PHP', 'Ruby', 'Python', 'Go'];
+let languages = ['JavaScript', 'PHP', 'Ruby', 'Python', 'Go'];
 
 console.log(`私の好きな言語は${languages[0]}です。次は${languages[3]}を勉強してみたいです。`);
 
@@ -51,7 +51,7 @@ function sayHello() {
   console.log('Hello');
 }
 
-let sayWorld = function() {
+let sayWorld = function () {
   console.log('World');
 }
 
@@ -66,30 +66,30 @@ user.sayHello();
 
 //Q8 引数
 let calc = {
-  add(x,y) {
+  add(x, y) {
     console.log(x + y);
   },
-  subtract(x,y) {
+  subtract(x, y) {
     console.log(x - y);
   },
-  multiply(x,y) {
+  multiply(x, y) {
     console.log(x * y);
   },
-  divide(x,y) {
+  divide(x, y) {
     console.log(x / y);
   }
 };
 
-calc.add(5,2);
-calc.subtract(12,2);
-calc.multiply(7,7);
-calc.divide(25,5);
+calc.add(5, 2);
+calc.subtract(12, 2);
+calc.multiply(7, 7);
+calc.divide(25, 5);
 
 //Q9 返り値
-console.log('5 を 3 で割った余りは' + remainder(5,3) + 'です。');
-function remainder(x,y) {
+console.log('5 を 3 で割った余りは' + remainder(5, 3) + 'です。');
+function remainder(x, y) {
   let surplus = x % y;
-return surplus; 
+  return surplus;
 }
 
 //Q10 スコープ
@@ -102,7 +102,7 @@ return surplus;
 
 //応用編
 //Q1 標準組み込みオブジェクト
-let randomInt = Math.floor(Math.random() * 9) +1;
+let randomInt = Math.floor(Math.random() * 9) + 1;
 console.log(randomInt);
 
 //Q2 コールバック関数
@@ -112,17 +112,17 @@ setTimeout(() => {
 
 //Q3 if
 let num = 0;
-if(num === 0) {
+if (num === 0) {
   console.log('num is 0');
-}else if(num > 0) {
+} else if (num > 0) {
   console.log('num is greater than 0');
-}else {
+} else {
   console.log('num is less than 0');
 }
 
 //Q4 for
 let numbers = [];
-for(let number = 0;number < 100; number++) {
+for (let number = 0; number < 100; number++) {
   numbers[number] = number;
 }
 
@@ -130,13 +130,13 @@ console.log(numbers);
 
 //Q5 for × if
 let mixed = [4, '2', 5, '8', '9', 0, 1];
-for(let i = 0; i < mixed.length; i++) {
+for (let i = 0; i < mixed.length; i++) {
   let number = mixed[i];
-  if(typeof number !== 'number' || Number.isNaN(number)) {
+  if (typeof number !== 'number' || Number.isNaN(number)) {
     console.log('not number');
-  } else if(number % 2 === 0) {
+  } else if (number % 2 === 0) {
     console.log('even');
-  } else if(number % 2 !== 0) {
+  } else if (number % 2 !== 0) {
     console.log('odd');
   }
 }
