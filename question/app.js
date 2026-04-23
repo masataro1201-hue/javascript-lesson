@@ -127,3 +127,16 @@ for(let number = 0;number < 100; number++) {
 }
 
 console.log(numbers);
+
+//Q5 for × if
+let mixed = [4, '2', 5, '8', '9', 0, 1];
+for(let i = 0; i < mixed.length; i++) {
+  let number = mixed[i];
+  if(typeof number !== 'number' || Number.isNaN(number)) {
+    console.log('not number');
+  } else if(number % 2 === 0) {
+    console.log('even');
+  } else if(number % 2 !== 0) {
+    console.log('odd');
+  }
+}
