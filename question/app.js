@@ -119,3 +119,11 @@ if(num === 0) {
 }else {
   console.log('num is less than 0');
 }
+
+//Q4 for
+let numbers = [];
+for(let number = 0;number < 100; number++) {
+  numbers[number] = number;
+}
+
+console.log(numbers);
