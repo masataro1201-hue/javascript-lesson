@@ -136,7 +136,7 @@ for (let i = 0; i < mixed.length; i++) {
     console.log('not number');
   } else if (number % 2 === 0) {
     console.log('even');
-  } else if (number % 2 !== 0) {
+  } else {
     console.log('odd');
   }
 }
