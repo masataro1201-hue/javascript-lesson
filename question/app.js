@@ -39,3 +39,9 @@ let playerList = [
 ];
 
 console.log(playerList[1].favorites[1]);
+
+//Q5 四則演算
+let ages = playerList.map(player => player.age);
+let total = ages.reduce((sum, age) => sum + age, 0);
+let average = total / ages.length;
+console.log(average);
