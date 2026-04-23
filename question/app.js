@@ -102,7 +102,7 @@ function remainder(x, y) {
 
 //応用編
 //Q1 標準組み込みオブジェクト
-let randomInt = Math.floor(Math.random() * 9) + 1;
+let randomInt = Math.floor(Math.random() * 10);
 console.log(randomInt);
 
 //Q2 コールバック関数
