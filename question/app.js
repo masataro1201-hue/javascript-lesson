@@ -57,3 +57,9 @@ let sayWorld = function() {
 
 sayHello();
 sayWorld();
+
+//Q7 メソッド
+user.birthday = '2000-09-27';
+user.sayHello = sayHello;
+
+user.sayHello();
