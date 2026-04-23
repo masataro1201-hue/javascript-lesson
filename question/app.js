@@ -93,9 +93,14 @@ return surplus;
 }
 
 //Q10 スコープ
-function foo() {
-  let x = 1;
-}
-console.log(x);
+// function foo() {
+//   let x = 1;
+// }
+// console.log(x);
 
 //xのスコープがletで定義されているため関数の外での参照ができない。
+
+//応用編
+//Q1 標準組み込みオブジェクト
+let randomInt = Math.floor(Math.random() * 9) +1;
+console.log(randomInt);
